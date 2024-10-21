@@ -1,0 +1,30 @@
+<!-- used to float elements in left,right or none -->
+<!-- allows elements to be aligned to the left or right within their containing element -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Float Property</title>
+    <style>
+        #container {
+            height: 200px;
+            width: 500px;
+            background-color: palevioletred;
+            border: 3px solid black;
+        }
+        .box {
+            height: 150px;
+            width: 150px;
+            background-color: lightgreen;
+            margin: 5px;
+            border: 3px solid black;
+            float: right;      /*takes it to right side of the container div*/
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box1" class="box">Box1</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!-- allows modification of an element's shape and position -->
+<!-- can perform operations like ROTATE,SCALE and TRANSLATE -->
+<!-- doesn't affect the layout of surrounding elements -->
+<!-- implemented by rotate(),scale() or translate() -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform:Rotate</title>
+    <style>
+        .box {
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: lightblue;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            transition: all 0.5s ease-in 0ms;
+        }
+        /*will rotate to 45deg on hovering*/
+        .box:hover {
+            /*used to rotate an element...can rotate upto>>360deg*/
+            transform: rotate(45deg);  
+            /*use "rotatex" or "z" it goes to rotate in each axis*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Rotate</div>
+</body>
+</html>

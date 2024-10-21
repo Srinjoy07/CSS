@@ -1,0 +1,49 @@
+<!-- multi-dimensional layout -->
+<!-- much more complex,generally flex is used which is uni-directional -->
+<!-- Children becomes grid items -->
+<!-- everything that works in flex...it works on Grid -->
+<!-- define grid structure with grid-template property -->
+<!-- basically uses Matrix system -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GRID</title>
+    <style>
+        .container {
+            display: grid;   /*defining grid and sizes*/
+            grid-template-columns: 150px 150px;
+            grid-template-rows: 150px 150px;
+        }
+
+        #item1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            background-color: blue;
+        }
+        #item2 {
+            grid-column: 2/2;
+            grid-row: 1/2;
+            background-color: green;
+        }
+        #item3 {
+            grid-column: 1/2;
+            grid-row: 2/2;
+            background-color: pink;
+        }
+        #item4 {
+            grid-column: 2/2;
+            grid-row: 2/2;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="item1">Item 1</div>
+        <div id="item2">Item 2</div>
+        <div id="item3">Item 3</div>
+        <div id="item4">Item 4</div>
+    </div>
+</body>
+</html>

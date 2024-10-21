@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Border Sizing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .pad {
+            height: 50px;
+            width: 50px;
+            padding: 2px;
+            margin: 5px;
+            box-sizing: border-box; /*thos is used to define size and width including padding,border..that means it takes up the entire styling and content box size to fit it into a website */
+        }
+        #first {
+            border: 2px solid; 
+            box-sizing: content-box; /*adjusts the size based on the content and adds padding and border outside the content...means the given height and width applies to the content only*/
+            border-radius: 12%; 
+            background-color: aquamarine;
+        }
+        #second {
+            border: 3px dotted red;
+            border-radius: 0px 10px 0px 10px; 
+            background-color:chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div id="first" class="pad">First</div>
+    <div id="second" class="pad">Second</div>
+</body>
+</html>

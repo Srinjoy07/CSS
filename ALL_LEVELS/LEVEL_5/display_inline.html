@@ -1,0 +1,25 @@
+<!-- here height width both are useless...cause inline elements won't let us use height and width -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display-Inline Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            background-color: olivedrab;
+
+            display: inline;  /*inline won't let you take more space*/
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Box 1</div>
+    <div id="box2" class="box">Box 2</div>
+</body>
+</html>

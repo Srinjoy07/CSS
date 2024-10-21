@@ -1,0 +1,35 @@
+<!-- Used to define special states of HTML elements -->
+<!-- Syntax----  
+          selector:pseudo-class {styles} -->
+<!-- Common ex: :hover, :active , :first-child -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        .pseudo {
+            height: 25px;
+            width: 150px;
+            background-color: forestgreen;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        .pseudo:hover {  /*on hovering on buttom*/
+            height: 30px;
+            width: 160px;
+            background-color: lightcoral;
+        }
+        .pseudo:active { /*on clicking on button-active state*/
+            height: 30px;
+            width: 160px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <button class="pseudo">Learning Pseudo</button>
+</body>
+</html>

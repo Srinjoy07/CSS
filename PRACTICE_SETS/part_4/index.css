@@ -1,0 +1,30 @@
+/*TASK-1*/
+#check-height-width{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    }
+/*TASK-2/3/4*/
+#button1{
+    height: 60px;
+    width: 60px;
+    padding: 10px 15px;  /*task2*/
+    margin: 100px 100px 100px 100px; /*can use "10px 15px" as well*/ /*task3*/
+    border: 1px dotted black; /*task4*/
+    border-radius: 30px;
+    }
+/*TASK-5*/
+.box{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    }
+#box-1{
+    background-color: blueviolet;
+    padding:2px;
+    box-sizing: content-box; /*content box takes height and value for the content itself*/
+    }
+#box-2{
+    background-color: burlywood;
+    box-sizing: border-box;
+    }

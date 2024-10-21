@@ -1,0 +1,43 @@
+<!-- TASK 1:Create div bar with text and backround color with opacity
+     TASK 2:Change the color of the main content
+     TASk 3:Add background image of the main content
+     TASK 4:Use background shorthand property-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practice set 2</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #bar{
+            background-color: aquamarine;
+            color:rgb(255, 0, 0,0.6);  
+        }
+        main{
+            background-color: rgb(26, 135, 230);
+            height: 500px;
+        }
+        #product{
+            width:200px;
+            height:250px;
+            /* background-color: green;
+            background-image: url(jeans_2.webp);
+            background-repeat: no-repeat;
+            background-position: center; */
+            background: green url(jeans_2.webp) no-repeat none center;  /* this line is using SHORTHAND-->Syntax: .div(color,image,repeat,attachment,position) */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="bar">This is my nav bar</div>
+    </header>
+    
+    <main>
+         <div id="product">Product 1</div>
+    </main>
+</body>
+</html>

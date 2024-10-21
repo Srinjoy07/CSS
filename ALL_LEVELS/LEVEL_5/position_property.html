@@ -1,0 +1,59 @@
+<!-- 4types---
+     1.Static:Fixed and Default...document flow works...top,right,bottom,left,z-index doesn't work 
+     2.Relative:Element's position adjusted from its normal position
+     3.Absolute:Positions element relative to the nearest positioned ancestor
+     4.Fixed:Element relative to the viewpoint,does not move on scroll-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Position property</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        .box {
+            width: 60px;
+            height: 60px;
+            background-color: seagreen;
+            margin:5px;
+        }
+        #box1 {
+            position: static;
+        }
+        #box2 {
+            position: relative;
+            top: 30px;    /*this property makes the div deviate from it's original position*/
+            left: 80px;
+        }
+        #box3 {
+            position: absolute; /*it takes the element out of page..and adds a layer on it...hence the rest of the website(*basically the ones after it takes it's place)...used to overlap*/ /*increase the top value in inspect*/
+            top:10px;
+            left: 80px;
+        }
+        #box4 {
+            position: fixed;  /*it also takes the element out of the DOM*/
+            right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Box-static</div>
+    <div id="box2" class="box">Box-relative</div>
+    <div id="box3" class="box">Box-absolute</div>
+    <div id="box4" class="box">Box-fixed</div>
+    <!-- random box to make website scrollable -->
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+</body>
+</html>

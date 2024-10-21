@@ -1,0 +1,12 @@
+Core Concept:
+     central concepts in CSS that outlines the designs and layout of elements on the web page
+Components:
+    consists of four main components-margin,border,padding and content
+Margin:
+    the scope outside the border,seperating the elemenst from others.
+Border:
+    the outline that encapsulates the padding and component.
+Padding:
+    the space between the border and the actual content,providing a buffer
+Content:
+    the innermost layer where text,images or other media are housed

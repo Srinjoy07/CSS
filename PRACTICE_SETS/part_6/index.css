@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    text-decoration: none;
+}
+/*TASK1: creating nav bar*/
+nav {
+    display: flex;   
+    justify-content: space-around;
+    height: 25px;
+    padding-top: 10px;
+}
+header {
+     background-color: moccasin;
+}
+/*TASK-2*/
+img {
+    height:200px;
+    width: auto;
+    border: 1px solid black;
+}
+#img_container {
+    border: 2px solid black ;
+    height : 250px;
+    /*********************USEFUL TO ALIGN TEXT INSIDE DIV AT CENTER AS WELL*/
+    display: flex;
+    justify-content: center;  /*horizontally center*/
+    align-items: center;  /*vertically center*/
+}
+/*TASK-3*/
+.box{
+    width: 75px;
+    height: 75px;
+    border: 2px solid black;
+    flex-shrink: 0;  /*makes box 3 only shrink or grow*/
+}
+#box-container{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    width: 400px;
+}
+#box1 {
+    background-color: lightblue;
+}
+#box2 {
+    background-color: lightgreen;
+}
+#box3 {
+    background-color: lightcoral;
+    flex-grow: 4;
+    flex-shrink: 5;
+}
+/*TASK-4*/
+#media_box {
+    height: 50px;
+    width: 50px;
+    background-color: darkgreen;
+    border: 2px solid black;
+}
+@media screen and (min-width : 400px) {  /*this is for minimum 400px or more*/
+    #media_box {
+        background-color: blue;
+    }
+}
+@media screen and (min-width: 300px ) and (max-width : 400px) {  /*this is for minimum 300px to 400px*/
+    #media_box {
+        background-color: red;
+    }
+}

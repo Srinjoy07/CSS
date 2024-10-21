@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Margin</title>
+    <style>
+        * { margin: 0; padding: 0; }
+        .pad {
+            
+            height: 50px;
+            width: 50px;
+            padding: 10px;
+        }
+        #first {
+            margin: 5px 5px 25px 5px; /*this is also clockwise*/ /*can use single value as well*/
+            background-color: aquamarine;
+        }
+        #second {
+            margin: 50px 5px 5px 5px;  /*the thing to remember is the first one,top margin will not be affected as long as the down margin of #first goes above 50px*/
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div id="first" class="pad">First</div>
+    <div id="second" class="pad">Second</div>
+</body>
+</html>
+
+<!-- DIFF b/w margine & padding>>>when given margin for two neighbouring elements...margin is taken of the maximum margin element...suppose two elements with 5px and 10px,then 10px margin will be taken into consideration -->
+<!-- border and padding is different for all elements -->

@@ -1,0 +1,42 @@
+<!-- go to GOOGLE Colour Picker to choose the favourable colour code and colour -->
+
+<!-- RGB colour model,three colors can go at max to 255...Syntax: rgb(0-255,0-255,0-255) -->
+
+<!-- HEX is basically another method of writing the colour system...it is basically same as RGB but syntax is different...basically converting the RGB value of each R,G and B to HEX number..and that's it..Sytax: #RRGGBB -->
+
+<!-- Alpha Channel: It means to select the opacity or transparency of a text...It is generally in range from 0.0 to 1.0...where,0.0 is fully transparent and 1.0 is fully opaque -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background_colour</title>
+    <style>
+        * {   
+            margin:0;
+            padding: 0;
+        }  
+        .rgb_system{
+            color:indianred;
+            background-color: rgb(41,55,60); /* RGB Numbering */
+        }
+        .hex_system{
+            color:indianred;
+            background-color: #29373C; /* Same colour in Hex code */
+        }
+        .alpha_channel{
+            color:rgb(17, 115, 136,0.65); /* Select from 0.0 to 1.0 */
+            background-color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="rgb_system">background color for RGB</div>
+    <br>
+    <div class="hex_system">background colour for HEX model</div>
+    <br>  
+    <div class="alpha_channel">background colour to test Alpha Channel</div>
+</body>
+</html>

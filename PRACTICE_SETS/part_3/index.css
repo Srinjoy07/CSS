@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*Task-2*/
+    font-family: 'Times New Roman', Times, serif;
+    }
+#nav h1{
+    background-color: powderblue;
+    /*Task-1*/
+    text-align: center;   
+    text-transform: capitalize; 
+    }
+/*Task-3*/
+#inner {
+    font-size: 10px;
+}
+#outer {
+    font-size: 25px;
+}

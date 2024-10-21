@@ -1,0 +1,36 @@
+<!-- Defining animation using percentage tag -->
+<!-- we can define percentage and divide the animation along with speed  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation_Percentage</title>
+    <style>
+        .box {
+            height: 70px;
+            width: 70px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: blue;
+            position: relative;
+            top: 10px;
+            left: 10px;
+            
+            animation: animation 4s ease-in-out 0s infinite alternate;
+        }
+        
+        
+        /*USING PERCENTAGE TO DEFINE ANIMATION*/
+        @keyframes animation {
+            0% { left:10px; top: 0px;}
+            50% {left : 100px; top: 100px;} /*We arementioning that for the first 2 second it will go upto 100px-for the half of specified time....for the rest of 2 seconds it covers the path of 500px or next 400px */
+            100% {left: 500px; top: 0px;}  
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Animation Percentage</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!-- flex-shrink:determines how much a flex item will shrink relative to other items in the flex container if there is insufficient space -->
+<!-- can set individual gaps -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>flex-shrink</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+        .box {
+            height: 200px;
+            width: 200px;  /*width alltogether is more than 800..so boxes are shrinked together*/
+            border: 3px solid black;
+            margin-right: 5px;
+        }
+        h1 {margin-left: 200px;}
+        #container{
+            height: 300px;
+            width: 600px;  
+            padding: 10px;
+            margin: 20px;
+            border: 3px solid black;
+            background-color: lightblue;
+            
+            display: flex;
+            justify-content: center;
+        }
+
+        #box1 {background-color: aqua;
+               flex-shrink: 0;} /*means it won't shrink even if the container goes smaller*/
+        #box2 {background-color: blueviolet;
+               flex-shrink: 2;} /*2 means it shrinks 10%*/
+        #box3 {background-color: brown;
+            flex-shrink: 0.5;} /*it means it shrinks by 0.5%*/
+        #box4 {background-color: yellow;}
+    </style>
+</head>
+<body>
+    <h1 id="heading">Flex Container</h1>
+    <div id="container">
+        <div id="box1" class="box">Flex item 1</div>
+        <div id="box2" class="box">Flex item 2</div>
+        <div id="box3" class="box">Flex item 3</div>
+        <div id="box4" class="box">Flex item 4</div>
+    </div>
+</body>
+</html>

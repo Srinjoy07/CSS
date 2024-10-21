@@ -1,0 +1,62 @@
+<!-- GENERAL SYNTAX FOR ANIMATION:                                                --> 
+<!--      @keyframes animation-name {                                             -->
+<!--      from{                                                                   -->
+<!--           }                                                                  -->
+<!--      to{                                                                     -->
+<!--           }                                                                  -->
+<!--  }                                                                           -->
+
+<!-- in the syntax we can use 0% as to mention the start/from .... and mention 100% to mention end/to -->
+
+<!-- KEY TAKEAWAYS: 
+     Animation-name: Specifies the name of the @keyframes defined animation.
+     Animation-duration: Defines the total time the animation takes to complete one cycle
+     Animation-timing function: Controls the packing of the animation(e.g,. Linear,ease-in)
+     Animation-delay: Sets a delay before the animation starts, allowing for a pause before animation
+     Animation-iteration-count: Indicates the number of times the animation should repeat
+     Animation-direction: Specifies the direction of the animation, allowing for reverse or alternate cycles-->
+
+<!-- the thing is we can one time define the animation and use the name of the animation to use it multiple times -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box {
+            height: 70px;
+            width: 70px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: blue;
+            /*relative position is used on single element to fix it's position*/
+            position: relative;
+            top: 10px;
+            left: 10px;
+            
+
+            /*AFTER DEFINING THE ANIMATION WE NEED TO ADD IT TO THE ELEMENT WE WANT ALONG WITH PROPERTIES*/
+            animation-name: animation;
+            animation-duration: 2.5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count:infinite;  /*infinitely runs the animation*/
+            animation-direction: alternate; /*runs the animation in reverse*/
+            
+            /*SHORTHAND ANIMATION*/
+            /*animation: animation 2.5s ease-in-out 0s infinite alternate;*/
+        }
+        
+        /*ANIMATION template defining*/
+        @keyframes animation {
+            from { left:10px;}
+            to {left: 700px;}  
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Animation</div>
+</body>
+</html>

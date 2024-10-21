@@ -1,0 +1,9 @@
+Relative websites solely depends on CSS units
+
+CSS units cheat sheet:
+   px-absolute pixel value
+   %-relative to parent element
+   em-relative to font size
+   rem-relative to root element
+   vw-relative to 1% viewport width
+   vh-relative to 1% viewport height

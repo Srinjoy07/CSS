@@ -1,0 +1,48 @@
+<!-- CSS transition is a property that enables smooth animation between changes in CSS property values -->
+<!-- TRANSITION-PROPERTY: Defines which CSS properties will transition -->
+<!-- TRANSITION-DURATION: Sets how long the transition lasts -->
+<!-- TRANSITION-TIMING-FUNCTION: Controls the speed curve of the transition -->
+<!-- TRANSITION DELAY: Specifies a delay before the transition starts -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Property</title>
+    <style>
+        .pseudo {
+            height: 25px;
+            width: 150px;
+            background-color: forestgreen;
+            border: 2px solid black;
+            border-radius: 10px;
+            
+
+            /*Defining transition*/
+            transition-property: all;  /*to select all properties while change*/
+            transition-duration: 0.5s;  /*time duration for transition*/
+            transition-timing-function: ease-in-out;   /*starts slow-mid fast-slow end*/
+            /*OTHER TRANSITION_TIMING_FUNCTIONS*/  
+            /*steps(3) : takes 3 steps to reach goal style*/
+            transition-delay: 0.2s; /*delays in between transition*/
+
+            /*TRANSITION-SHORTHAND*/
+            /*transition: all 0.5s ease-in-out 0.2s;*/
+        }
+        .pseudo:hover {  
+            height: 30px;
+            width: 160px;
+            background-color: lightcoral;
+        }
+        .pseudo:active { 
+            height: 30px;
+            width: 160px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <button class="pseudo">Transition Button</button>
+</body>
+</html>
